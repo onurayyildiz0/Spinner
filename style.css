@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    background-color: blueviolet;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.spinner{
+
+    
+    align-items: center;
+    border: 6px solid white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-top-color:blue ;
+
+    animation-name: myAnimation;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation{
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+
+    100%{
+       transform: rotate(360deg);
+    }
+
+
+}
